@@ -1,0 +1,7 @@
+{
+  "host" : "http://localhost:3000",
+  "S3AccessKey" : "AKIAJANVYUHMATXZNUKA",
+  "S3Secret" : "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",
+  "S3Bucket" : "orkungrid",
+  "dbURL" : "mongodb://photogrid:myphotogrid@ds055852.mongolab.com:55852/photogrid"
+}
