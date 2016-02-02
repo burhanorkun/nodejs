@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Socket.io</title>
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css"/>
+</head>
+<body>
+<input type="text">
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/socket.io-client/socket.io.js"></script>
+<script>
+    var soket = io.connect();
+
+    $("body").on("keypress", "input", function (evt) {
+        if (evt.which != 13) return;
+        soket.emit("ilan_kutusu", $(this).val());
+    });
+
+    soket.on("connect", function () {
+        soket.on("sari_sayfalar", function (data) {
+            console.log(data);
+        });
+    });
+
+</script>
+</body>
+</html>

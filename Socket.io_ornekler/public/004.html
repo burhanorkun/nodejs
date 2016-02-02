@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Socket.io</title>
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css"/>
+</head>
+<body>
+
+<script src="bower_components/socket.io-client/socket.io.js"></script>
+<script>
+
+    var soket = io.connect();
+
+    soket.on("connect", function () {
+        soket.on("sihirli kutu",function(data){
+            console.log(data);
+        });
+    });
+</script>
+</body>
+</html>

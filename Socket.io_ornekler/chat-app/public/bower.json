@@ -1,0 +1,20 @@
+{
+  "name": "Angular App",
+  "version": "0.0.1",
+  "authors": [
+    "Burhan ORKUN"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.2.2",
+    "socket.io-client": "*",
+    "angular":"*"
+  }
+}

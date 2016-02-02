@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="chat">
+<head>
+    <meta charset="UTF-8">
+    <title>Socket.io + Angular Chat</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css"/>
+</head>
+<body ng-controller="ChatCtrl">
+
+<input ng-model="msg.name" placeholder="Adınızı giriniz:" type="text"/> <br/>
+<textarea ng-model="msg.message" placeholder="Mesajınız." cols="30" rows="10"></textarea>
+<button ng-click="sendMessage()">Gönder</button>
+<hr/>
+
+<ul>
+    <li ng-repeat="msg in messages"> {{msg.name}} => {{msg.message}}</li>
+</ul>
+
+<script src="bower_components/socket.io-client/socket.io.js"></script>
+<script>
+
+    function ChatCtrl($scope) {
+
+        $scope.messages = [];
+
+        var soket = io.connect();
+
+        soket.on("message to all", function (msg) {
+            $scope.$apply(function () { // to invoke angular's lifecycle
+                $scope.messages.push(msg);
+            });
+        });
+
+        $scope.sendMessage = function () {
+            soket.emit("message box", $scope.msg);
+        }
+    }
+
+    angular.module("chat", [])
+            .controller("ChatCtrl", ChatCtrl);
+
+
+</script>
+</body>
+</html>

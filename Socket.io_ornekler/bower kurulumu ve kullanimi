@@ -1,0 +1,11 @@
+//nodejs kurulu oldugundan
+$>npm install
+dersek package.json dosyasýndaki baðýmlýlýklari indirir.
+
+// bower kurarak bagimli oldugumuz js objelerini indirebiliriz.
+// Not: bower i kurmak icin git kurulu olmasi gerekiyor
+//nodejs uzerinden
+$>npm install bower -g
+diyerek bower i kurabiliriz.  Not: -g ile global olarak bilgisayarimiza kurulum yapabiliriz.
+//bower i kurmak icin html in kullandigi klasore gidip $>bower install diyerek bagimli oldugu js dosyalarini indirebiliriz.
+//bower bagimliliklarini bower.json dosyasinda bakiyoruz
