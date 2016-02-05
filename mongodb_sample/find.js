@@ -19,4 +19,5 @@ Book.find({}, function (err, result) {
         });
 
     console.log(bookList);
+    console.log(bookList[0]);
 });
