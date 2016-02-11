@@ -13,9 +13,9 @@ Array.prototype.toSet = function () {
     return temp;
 }
 var renkler = [];
-renkler.add("Kırmızı");
-renkler.add("Sarı");
+renkler.add("KÄ±rmÄ±zÄ±");
+renkler.add("SarÄ±");
 renkler.push("Mavi");
-renkler.push("Sarı");
+renkler.push("SarÄ±");
 renkler.add("Mavi");
 console.log(renkler, renkler.toSet()); // ?
