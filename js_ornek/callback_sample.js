@@ -15,3 +15,6 @@ function some_function(arg1, arg2, callback) {
 some_function(5, 10, function(num) {
     console.log("callback cagrildi! " + num);
 });
+
+
+
