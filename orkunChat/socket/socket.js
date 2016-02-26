@@ -47,7 +47,7 @@ module.exports = function(io, rooms){
         })
 
         //for socket.io 1.x
-        /*
+        /*  --bu eski versiyonda sorun oluyor
         function getUsersFromRoom(room){
             var userArray = [];
             var nsp = io.of('/messages');
