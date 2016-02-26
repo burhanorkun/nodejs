@@ -55,7 +55,7 @@ module.exports = function(express, app, formidable, fs, os, gm, knoxClient, mong
                     gm(nfile).resize(300).write(nfile, function(){
                         // upload amazon cloud S3 bucket
 
-                        /*
+                        /*  --eski versiyon
                         var stream = fs.createReadStream(nfile)
                         var mimetype = mime.lookup(nfile);
                         var reqKnox;
@@ -84,7 +84,7 @@ module.exports = function(express, app, formidable, fs, os, gm, knoxClient, mong
                             }
                         }) */
 
-                        // udemy method***
+                        // yeni versiyon*** bu sekilde calisti
                         fs.readFile(nfile, function(err, buf){
                             var reqKnox = knoxClient.put(fname, {
                                 'Content-Length':buf.length,
