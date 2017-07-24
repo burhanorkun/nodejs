@@ -1,9 +1,9 @@
 {
-"dbURL" : "mongodb://burhanorkun:B****3@ds041623.mongolab.com:41623/orkun1",
-"sessionSecret" : "FSOCSCOEKCSLCAECRSCSDCDSCDSCDSCDSCDSCDSCDSVFSS",
+"dbURL" : "mongodb://******kun1",
+"sessionSecret" : "*****",
 "fb" : {
-"appID" : "1468008960173990",
-"appSecret" : "030a0281c0219a548fb763dacfe39123",
+"appID" : "******",
+"appSecret" : "**************",
 "callbackURL" : "http://orkunchat.dotcloudapp.com/auth/facebook/callback"
 },
   "host" : "http://orkunchat.dotcloudapp.com"
