@@ -57,7 +57,7 @@ server.listen(app.get('port'), function(){
     console.log('OrkunCHAT on Port : ' + app.get('port'));
 })
 
-//mongodb://burhanorkun:B***3@ds041623.mongolab.com:41623/orkun1
+//mongodb://ab.com:41623/orkun1
 
 /*
  var userSchema = mongoose.Schema({
