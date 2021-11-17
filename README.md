@@ -1,4 +1,2 @@
 # nodejs
-NodeJs samples
-
-You can write good samples
+It is personal chat application that writen with NodeJs,MongoDb and SocketIO
