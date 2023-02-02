@@ -14,7 +14,7 @@
     "gm": "^1.16.0",
     "hogan-express": "^0.5.2",
     "knox": "^0.9.0",
-    "mongoose": "^4.1.9",
+    "mongoose": ">=5.13.15",
     "socket.io": "^1.0.5"
   }
 }
